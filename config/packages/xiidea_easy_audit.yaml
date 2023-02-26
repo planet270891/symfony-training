@@ -1,0 +1,7 @@
+# config/packages/xiidea_easy_audit.yaml
+
+xiidea_easy_audit:
+  user_property : ~
+  audit_log_class : App\Entity\AuditLog
+  doctrine_objects :
+    App\Entity\Contact : [created, updated, deleted]

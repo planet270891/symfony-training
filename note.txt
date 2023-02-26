@@ -1,0 +1,26 @@
+# Run Server
+symfony server:start
+
+# Check All Routes
+php bin/console debug:router
+
+# Make model entity
+php bin/console make:entity
+
+# Make Migration
+php bin/console make:migration
+
+# Migrate Entity
+php bin/console doctrine:migrations:migrate
+
+# Seeder / Fixtures
+php bin/console doctrine:fixtures:load
+
+# Make User
+php bin/console make:user
+
+# Password Encode and Generate
+php bin/console security:hash-password
+
+# Generate JWT Key
+php bin/console lexik:jwt:generate-keypair
